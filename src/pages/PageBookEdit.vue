@@ -173,6 +173,15 @@ onMounted(()=>{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     padding: 20px;
+    justify-items: center;
+
+    @media (min-width: 756px) and (max-width: 1279.998px) {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @media (min-width: 320px) and (max-width: 755.998px) {
+        grid-template-columns: 1fr;
+    }
 }
 .book__cover{
     display: flex;

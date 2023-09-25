@@ -103,7 +103,7 @@ function save(){}
     margin-bottom: 10px;
 }
 .book{
-    width: 700px;
+    max-width: 700px;
     display: flex;
     flex-direction: column;
 
@@ -111,6 +111,16 @@ function save(){}
         display: grid;
         grid-template-columns: 2fr 3fr;
         margin-bottom: 50px;
+        justify-items: center;
+
+        @media (min-width: 756px) and (max-width: 1279.998px) {
+            grid-template-columns: 1fr 2fr;
+        }
+
+        @media (min-width: 320px) and (max-width: 755.998px) {
+            grid-template-columns: 1fr;
+            max-width: 80%;
+        }
     }
     &__cover{
         aspect-ratio: 3/4;
