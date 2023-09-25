@@ -1,3 +1,6 @@
+import "material-design-icons-iconfont/dist/material-design-icons.min.css";
+import "vuestic-ui/dist/styles/reset.css"
+
 import {createApp} from "vue"
 import App from "@/App.vue"
 import {router} from "@/router";
